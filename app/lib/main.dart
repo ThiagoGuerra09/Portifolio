@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Thiago Guerra W. Felipe',
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.amber,
-        scaffoldBackgroundColor: Color.fromARGB(255, 255, 253, 253),
+        scaffoldBackgroundColor: Color.fromRGBO(133, 130, 130, 1),
       ),
       home: HomeScreen(title: 'Portifolio Thiago Guerra '),
     );
