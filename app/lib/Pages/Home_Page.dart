@@ -90,12 +90,57 @@ class _HomePageItemState extends State<HomeScreen> {
               ],
             ),
           ),
-          Container(
-            width: 200,
-            height: 200,
-            child: Image.asset(
-              "assets/images/thomas.jfif",
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                flex: 1,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Container(
+                        width: 200,
+                        height: 200,
+                        child: ClipRRect(
+                          child: Image.asset("images/Eu.jfif"),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(300)),
+                        )),
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      color: Color.fromARGB(255, 178, 178, 173),
+                      width: 500,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                              "Olá, sou o Thiago Guerra tenho 19 anos, facilidade em relacionamento interpessoal, boa oratória e muita proatividade em encarar novos desafios. Atualmente estou cursando o 4º período de Ciências da Computação na PUC Minas💻.",
+                              style: TextStyle(fontSize: 18.0)),
+                          Text(
+                              "-Profissional dinâmico e engajado no aprendizado de novas tecnologias.",
+                              style: TextStyle(fontSize: 18.0)),
+                          Text(
+                              "-Facilidade em trabalhar em equipe e de lidar com pessoas.",
+                              style: TextStyle(fontSize: 18.0)),
+                          Text(
+                              "-Tenho conhecimento em front-end e em back-end.",
+                              style: TextStyle(fontSize: 18.0)),
+                          Text("-Inglês intermediário/avançado.",
+                              style: TextStyle(fontSize: 18.0)),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
           ),
         ],
       ),
