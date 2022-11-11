@@ -1,21 +1,18 @@
-import 'dart:html';
-
 import 'package:app/Pages/Tecnology_Page.dart';
-import 'package:app/Pages/Experience_Page.dart';
+
+import 'package:app/Pages/Home_Page.dart';
 import 'package:flutter/material.dart';
+import 'package:app/Pages/Experience_Page.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'Contacts_Page.dart';
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key, required this.title});
-
-  final String title;
+class ContactsPage extends StatefulWidget {
+  const ContactsPage({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomePageItemState();
+  State<ContactsPage> createState() => _ContactsPageState();
 }
 
-class _HomePageItemState extends State<HomeScreen> {
+class _ContactsPageState extends State<ContactsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +24,7 @@ class _HomePageItemState extends State<HomeScreen> {
             gradient: LinearGradient(
               colors: <Color>[
                 Color.fromARGB(255, 22, 25, 28),
-                Color.fromRGBO(107, 104, 105, 1)
+                Color.fromARGB(255, 107, 104, 105)
               ],
             ),
           ),
@@ -130,7 +127,7 @@ class _HomePageItemState extends State<HomeScreen> {
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text("Sobre mim", style: TextStyle(fontSize: 28.0))
+                      Text("Contatos", style: TextStyle(fontSize: 28.0))
                     ]),
               ],
             ),
@@ -167,20 +164,39 @@ class _HomePageItemState extends State<HomeScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                                "Olá, sou o Thiago Guerra tenho 19 anos, facilidade em relacionamento interpessoal, boa oratória e muita proatividade em encarar novos desafios. Atualmente estou cursando o 4º período de Ciências da Computação na PUC Minas💻.",
-                                style: TextStyle(fontSize: 18.0, height: 1.5)),
-                            Text(
-                                "-Profissional dinâmico e engajado no aprendizado de novas tecnologias.",
-                                style: TextStyle(fontSize: 18.0, height: 1.5)),
-                            Text(
-                                "-Facilidade em trabalhar em equipe e de lidar com pessoas.",
-                                style: TextStyle(fontSize: 18.0, height: 1.5)),
-                            Text(
-                                "-Tenho conhecimento em front-end e em back-end.",
-                                style: TextStyle(fontSize: 18.0, height: 1.5)),
-                            Text("-Inglês intermediário/avançado.",
-                                style: TextStyle(fontSize: 18.0, height: 1.5)),
+                            Row(
+                              children: [
+                                Icon(FontAwesomeIcons.github),
+                                Text(" ThiagoGuerra09",
+                                    style:
+                                        TextStyle(fontSize: 18.0, height: 1.5)),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(FontAwesomeIcons.linkedin),
+                                Text(
+                                    "  https://www.linkedin.com/in/ThiagoGuerraWFelipe/",
+                                    style:
+                                        TextStyle(fontSize: 18.0, height: 1.5)),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(FontAwesomeIcons.phone),
+                                Text("  55 31 99665-8018",
+                                    style:
+                                        TextStyle(fontSize: 18.0, height: 1.5)),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(Icons.mail),
+                                Text("  Thiagogwf@gmail.com",
+                                    style:
+                                        TextStyle(fontSize: 18.0, height: 1.5)),
+                              ],
+                            ),
                           ],
                         ),
                       ),

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.amber,
         scaffoldBackgroundColor: Color.fromRGBO(133, 130, 130, 1),
       ),
-      home: HomeScreen(title: 'Portifolio Thiago Guerra '),
+      home: HomeScreen(title: 'Portifolio Thiago Guerra'),
     );
   }
 }
